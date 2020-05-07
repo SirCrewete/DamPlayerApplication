@@ -9,6 +9,8 @@ import android.view.View;
 
 public class insideApp extends AppCompatActivity {
 
+    MediaPlayer mp;
+    int posicion = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,12 +18,14 @@ public class insideApp extends AppCompatActivity {
         setContentView(R.layout.activity_inside_app);
     }
 
-    public void onClickComenzar(View v){
-        startService(new Intent(getBaseContext(), MyService.class));
+    public void clickOnStart(View v) {
+        mp = MediaPlayer.create(this, R.raw.hammer);
+        mp.start();
     }
 
-    public void onClickParar(View v){
-        stopService(new Intent(getBaseContext(), MyService.class));
+    public void clickOnStop(View v){
+        if(mp != null) {
+            mp.stop();
+        }
     }
-
 }
