@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".insideApp"></activity>
-        <activity android:name=".RegistroActivity"/>
+        <service
+            android:name=".ServiceMusica"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".insideApp" />
+        <activity android:name=".RegistroActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

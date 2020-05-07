@@ -1,18 +1,21 @@
 <resources>
     <string name="app_name">ReproductorMusicaApp</string>
-    <string name="fotoportada">FotoPortada</string>
+    <string name="fotoportada">fotoportada</string>
+    <string name="fotoPortada2">fotoortada2</string>
     <string name="DescripcionPortada">Bienvenido!</string>
     <string name="PortadaBotonIniciarSesion">Iniciar Sesión</string>
     <string name="PortadaBotonRegistrarse">Registrarse</string>
     <string name="PortadaSwitchToBlack">Black</string>
-    <string name="fotoPortada2">fotoPortada2</string>
-    <string name="fotoportada2">fotoPorta</string>
     <string name="descripcionActivityRegistro">Bienvenido!\nComplete todos los campos para realizar el registro.</string>
-    <string name="registroNombreUsuario">Nombre...</string>
+    <string name="registroNombre">Nombre...</string>
     <string name="registroPassword">Password...</string>
     <string name="registroEmail">Email...</string>
     <string name="botonRegistrarseActivityReg">Registrarse</string>
     <string name="insideAppMensajeBienvenida">Bienvenido!\nReproduce la canción que te apetezca escuchar.</string>
+    <string name="registroApellido">Apellido...</string>
+    <string name="registroNombreDeCuenta">Username...</string>
+    <string name="activityInsideFoto"></string>
+
 
 
 

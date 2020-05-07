@@ -7,19 +7,6 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/FotoPortada"
-        android:layout_width="220dp"
-        android:layout_height="358dp"
-        android:contentDescription="@string/fotoportada"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134"
-        app:srcCompat="@drawable/FotoPortada" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="199dp"
@@ -39,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/PortadaBotonIniciarSesion"
+        android:onClick="functionLoginIn"
         android:layout_margin="40sp"
         android:background="@drawable/btn_rounded"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,6 +42,7 @@
         android:layout_margin="40sp"
         android:background="@drawable/btn_rounded"
         android:text="@string/PortadaBotonRegistrarse"
+        android:onClick="functionRegister"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,4 +60,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         app:layout_constraintVertical_bias="0.56" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="245dp"
+        android:layout_height="343dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/foto_portada" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,26 +8,40 @@
     tools:context=".insideApp">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="267dp"
-        android:layout_height="329dp"
+        android:id="@+id/activityInsideFoto"
+        android:layout_width="228dp"
+        android:layout_height="346dp"
+        android:contentDescription="@string/activityInsideFoto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.060000002"
-        app:srcCompat="@drawable/FotoPortada" />
+        app:layout_constraintVertical_bias="0.26999998"
+        app:srcCompat="@drawable/foto_portada"/>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="296dp"
-        android:layout_height="86dp"
-        android:text="@string/insideAppMensajeBienvenida"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <Button
+        android:id="@+id/botonStart"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="@drawable/icono_reproducir"
+        android:onClick="onClickComenzar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/activityInsideFoto"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <Button
+        android:id="@+id/botonStop"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:background="@drawable/icono_parar"
+        android:onClick="onClickParar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityInsideFoto"
+        app:layout_constraintVertical_bias="0.100000024" />
 </androidx.constraintlayout.widget.ConstraintLayout>
