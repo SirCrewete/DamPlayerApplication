@@ -15,7 +15,8 @@
     <string name="registroApellido">Apellido...</string>
     <string name="registroNombreDeCuenta">Username...</string>
     <string name="activityInsideFoto"></string>
-
+    <string name="fotoInsideApp"></string>
+    <string name="textEmailAddress"></string>
 
 
 
