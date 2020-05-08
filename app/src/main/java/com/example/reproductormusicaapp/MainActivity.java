@@ -17,15 +17,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void functionRegister(View v){
-        Toast.makeText(this,"Procediendo al registro.", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, RegistroActivity.class);
-        startActivity(intent);
+       Toast.makeText(this,"TOAST REGISTER", Toast.LENGTH_SHORT).show();
+        Intent intentRegister = new Intent(this, RegistroActivity.class);
+        startActivity(intentRegister);
     }
 
     public void functionLoginIn(View v){
-        Toast.makeText(this,"Registro completado con exito.", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, insideApp.class);
-        startActivity(intent);
+        Toast.makeText(this,"TOAST LOGIN", Toast.LENGTH_SHORT).show();
+        Intent intentLogin = new Intent(this, insideApp.class);
+        startActivity(intentLogin);
     }
 }
 

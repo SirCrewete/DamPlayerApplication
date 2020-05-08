@@ -26,14 +26,11 @@ public class BaseDeDatos extends SQLiteOpenHelper {
                 "apellido TEXT," +
                 "telefono TEXT);";
         db.execSQL(createTable);
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
     }
-
 
     public void insertData(String nombre, String apellido, String telefono){
         SQLiteDatabase escritura = getWritableDatabase();
@@ -41,11 +38,7 @@ public class BaseDeDatos extends SQLiteOpenHelper {
                 "VALUES(\""+nombre+"\",\""+apellido+"\""+",\""+telefono+"\");";
         escritura.execSQL(insert);
         escritura.close();
-
     }
-
-
-
 
     public void getData(){
         SQLiteDatabase lectura = getReadableDatabase();
