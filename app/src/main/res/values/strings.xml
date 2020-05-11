@@ -17,7 +17,8 @@
     <string name="activityInsideFoto"></string>
     <string name="fotoInsideApp"></string>
     <string name="textEmailAddress"></string>
-
+    <string name="loginUsername">Username</string>
+    <string name="loginPassword">Password</string>
 
 
 </resources>

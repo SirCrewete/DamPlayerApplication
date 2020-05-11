@@ -24,7 +24,9 @@ public class BaseDeDatos extends SQLiteOpenHelper {
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "nombre TEXT," +
                 "apellido TEXT," +
-                "telefono TEXT);";
+                "password TEXT," +
+                "email TEXT," +
+                "usernmame TEXT);";
         db.execSQL(createTable);
     }
 
@@ -34,22 +36,22 @@ public class BaseDeDatos extends SQLiteOpenHelper {
 
     public void insertData(String nombre, String apellido, String telefono){
         SQLiteDatabase escritura = getWritableDatabase();
-        String insert = "INSERT INTO usuarios (nombre,apellido,telefono) " +
+        String insert = "INSERT INTO usuarios (nombre,apellido,password,email,username) " +
                 "VALUES(\""+nombre+"\",\""+apellido+"\""+",\""+telefono+"\");";
         escritura.execSQL(insert);
         escritura.close();
     }
 
-    public void getData(){
+public void getData(){
         SQLiteDatabase lectura = getReadableDatabase();
         String sql = "SELECT * FROM usuarios";
         Cursor cursor = lectura.rawQuery(sql, null);
         cursor.moveToFirst();
         List<Usuario> usuarios = new ArrayList<>();
         do{
-            usuarios.add(new Usuario(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3)));
-            System.out.println("Nombre del usuario: "+cursor.getString(1));
+        usuarios.add(new Usuario(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3)));
+        System.out.println("Nombre del usuario: "+cursor.getString(1));
         }while(cursor.moveToNext());
         lectura.close();
-    }
-}
+        }
+        }

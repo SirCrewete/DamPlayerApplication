@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:id="@+id/layout"
+    android:background="@drawable/gradient_list"
     tools:context=".RegistroActivity">
 
     <TextView
@@ -23,8 +24,8 @@
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="285dp"
-        android:layout_height="45dp"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
         android:layout_margin="10sp"
         android:autofillHints=""
         android:ems="10"
@@ -38,8 +39,8 @@
 
     <EditText
         android:id="@+id/editText5"
-        android:layout_width="285dp"
-        android:layout_height="45dp"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
         android:autofillHints=""
         android:ems="10"
         android:layout_margin="10sp"
@@ -53,8 +54,8 @@
 
     <EditText
         android:id="@+id/registroEmail"
-        android:layout_width="285dp"
-        android:layout_height="45dp"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:layout_margin="10sp"
         android:hint="@string/registroEmail"
@@ -70,8 +71,8 @@
 
     <EditText
         android:id="@+id/nombreDeUsuarioRegistro"
-        android:layout_width="285dp"
-        android:layout_height="45dp"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
         android:autofillHints=""
         android:ems="10"
         android:layout_margin="10sp"
@@ -85,8 +86,8 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="285dp"
-        android:layout_height="45dp"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
         android:autofillHints=""
         android:ems="10"
         android:layout_margin="10sp"
