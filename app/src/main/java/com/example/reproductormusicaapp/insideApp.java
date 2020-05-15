@@ -28,7 +28,6 @@ public class insideApp extends AppCompatActivity {
     }
 
     public void  FLAG_SHOW_UI(){
-
     }
 
     public void clickOnStart(View v) {

@@ -19,6 +19,7 @@
     <string name="textEmailAddress"></string>
     <string name="loginUsername">Username</string>
     <string name="loginPassword">Password</string>
+    <string name="botonLoginInInsideApp">Entrar</string>
 
 
 </resources>

@@ -1,3 +1,4 @@
+/*
 package com.example.reproductormusicaapp;
 
 import android.content.Context;
@@ -55,3 +56,5 @@ public void getData(){
         lectura.close();
         }
         }
+
+*/

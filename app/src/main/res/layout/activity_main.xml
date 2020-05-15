@@ -12,18 +12,19 @@
         android:id="@+id/foto_portada"
         android:layout_width="245dp"
         android:layout_height="343dp"
+        android:contentDescription="@string/fotoportada"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/foto_portada"
-        android:contentDescription="@string/fotoportada" />
+        app:layout_constraintVertical_bias="0.072"
+        app:srcCompat="@drawable/foto_portada" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="199dp"
         android:layout_height="57dp"
+        android:fontFamily="sans-serif-thin"
         android:text="@string/DescripcionPortada"
         android:textAlignment="center"
         android:textSize="30sp"
@@ -32,47 +33,40 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.51" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="@string/PortadaBotonIniciarSesion"
-        android:onClick="functionLoginIn"
         android:layout_margin="40sp"
         android:background="@drawable/btn_rounded"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="functionLoginIn"
+        android:text="@string/PortadaBotonIniciarSesion"
+        android:textColor="#E47979"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.19999999" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:layout_width="180dp"
+        android:fontFamily="sans-serif-thin"
         android:layout_height="wrap_content"
         android:layout_margin="40sp"
+        android:textSize="16sp"
         android:background="@drawable/btn_rounded"
         android:text="@string/PortadaBotonRegistrarse"
+        android:textColor="#E47979"
         android:onClick="functionRegister"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.0" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="91dp"
-        android:layout_height="35dp"
-        android:text="@string/PortadaSwitchToBlack"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.56" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/activityInsideFoto"
-        android:layout_width="228dp"
-        android:layout_height="346dp"
+        android:layout_width="245dp"
+        android:layout_height="343dp"
         android:contentDescription="@string/activityInsideFoto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
