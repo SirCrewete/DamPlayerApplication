@@ -40,4 +40,9 @@ public class insideApp extends AppCompatActivity {
             mp.stop();
         }
     }
+
+    public void clickOnHome(View v){
+        Intent clickOnHome = new Intent (this, MainActivity.class);
+        startActivity(clickOnHome);
+    }
 }
