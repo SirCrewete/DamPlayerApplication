@@ -20,6 +20,10 @@
     <string name="loginUsername">Username</string>
     <string name="loginPassword">Password</string>
     <string name="botonLoginInInsideApp">Entrar</string>
+    <string name="loginExitoTitulo">Registro completado con exito!</string>
+    <string name="botonRegistroConExito">Entrar!</string>
+
+
 
 
 </resources>

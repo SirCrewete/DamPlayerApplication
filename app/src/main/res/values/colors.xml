@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="blanco">#FFFFFF</color>
+    <color name="letras">#E47979</color>
+
 </resources>
