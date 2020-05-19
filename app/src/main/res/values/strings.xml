@@ -22,8 +22,8 @@
     <string name="botonLoginInInsideApp">Entrar</string>
     <string name="loginExitoTitulo">Registro completado con exito!</string>
     <string name="botonRegistroConExito">Entrar!</string>
-
-
+    <string name="fotoHammerToFall">hammerToFall</string>
+    <string name="cambiarColor">Color</string>
 
 
 </resources>

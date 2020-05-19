@@ -12,36 +12,39 @@
         android:id="@+id/botonStart"
         android:layout_width="60sp"
         android:layout_height="60sp"
+        android:layout_marginBottom="128dp"
         android:background="@drawable/icono_reproducir"
         android:onClick="clickOnStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.44" />
 
     <Button
         android:id="@+id/botonStop"
         android:layout_width="70dp"
         android:layout_height="73dp"
+        android:layout_marginBottom="132dp"
         android:background="@drawable/stopmusicbutton"
         android:onClick="clickOnStop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="247dp"
-        android:layout_height="362dp"
+        android:id="@+id/imageView4"
+        android:layout_width="316dp"
+        android:layout_height="348dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29000002"
+        app:layout_constraintVertical_bias="0.37"
+        android:contentDescription="@string/fotoHammerToFall"
         app:srcCompat="@drawable/hammer" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

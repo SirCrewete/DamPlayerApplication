@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -46,6 +48,11 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,"TOAST LOGIN", Toast.LENGTH_SHORT).show();
         Intent intentLogin = new Intent(this, login.class);
         startActivity(intentLogin);
+    }
+
+    public void cambiarColor(View view){
+        Intent intentCambiarColor = new Intent ();
+        Toast.makeText(this, "CAMBIANDO COLOR", Toast.LENGTH_SHORT).show();
     }
 }
 
