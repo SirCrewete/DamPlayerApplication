@@ -9,10 +9,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegistroActivity extends AppCompatActivity {
 
+    TextView textViewExtras;
     EditText nombre;
     EditText apellido;
     EditText nombreUsuario;
@@ -25,6 +27,18 @@ public class RegistroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        textViewExtras = findViewById(R.id.textView_extras);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null){
+                String text = extras.getString("name");
+                text+= extras.getString("1");
+                text+= extras.getString("2");
+                text+= extras.getString("3");
+                text+= extras.getString("4");
+                text+= extras.getString("5");
+            textViewExtras.setText(text);
+        }
+
         nombre = findViewById(R.id.editText4);
         apellido = findViewById(R.id.nombreDeUsuarioRegistro);
         nombreUsuario = findViewById(R.id.editText2);

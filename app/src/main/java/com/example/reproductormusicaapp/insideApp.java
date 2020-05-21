@@ -3,7 +3,9 @@ package com.example.reproductormusicaapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -19,6 +21,9 @@ public class insideApp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inside_app);
+        BroadcastReceiver receiver = new MyReceiver();
+        IntentFilter filter = new IntentFilter(getIntent().ACTION_HEADSET_PLUG);
+        this.registerReceiver(receiver,filter);
 
         ConstraintLayout constraintLayout = findViewById(R.id.layout);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();

@@ -5,6 +5,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText user, pass;
+    EditText user, pass, datosUsuario, datosPassword;
     Button btnEntrar, btnRegistrar;
 
 
@@ -32,29 +33,30 @@ public class MainActivity extends AppCompatActivity {
         animationDrawable.setEnterFadeDuration(2000);
         animationDrawable.setExitFadeDuration(4000);
         animationDrawable.start();
-/*
-        user = (EditText) findViewById(R.id.);
-        pass = (EditText) findViewById(R.id);
-        btnEntrar = (Button) findViewById(R.id.btnEntrar);
-*/
 
     }
 
     public void functionRegister(View v){
        Toast.makeText(this,"TOAST REGISTER", Toast.LENGTH_SHORT).show();
         Intent intentRegister = new Intent(this, RegistroActivity.class);
+        intentRegister.putExtra("1", "1");
+        intentRegister.putExtra("2", "2");
+        intentRegister.putExtra("3", "3");
+        intentRegister.putExtra("4", "4");
+        intentRegister.putExtra("5", "5");
+
         startActivity(intentRegister);
     }
 
     public void functionLoginIn(View v){
         Toast.makeText(this,"TOAST LOGIN", Toast.LENGTH_SHORT).show();
         Intent intentLogin = new Intent(this, login.class);
-        startActivity(intentLogin);
-    }
+        if (datosUsuario.equals("") && datosPassword.equals("")){
+            startActivity(intentLogin);
+        }else{
+            Toast.makeText(this, "Usuario o contraseña incorrecta.", Toast.LENGTH_SHORT).show();
+        }
 
-    public void cambiarColor(View view){
-        Intent intentCambiarColor = new Intent ();
-        Toast.makeText(this, "CAMBIANDO COLOR", Toast.LENGTH_SHORT).show();
     }
 }
 

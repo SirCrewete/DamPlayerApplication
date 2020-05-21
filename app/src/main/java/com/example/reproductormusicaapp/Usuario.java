@@ -1,5 +1,7 @@
 package com.example.reproductormusicaapp;
 
+import org.jetbrains.annotations.Contract;
+
 public class Usuario {
     private int id;
     private String nombre;
