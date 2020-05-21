@@ -40,38 +40,6 @@
         app:layout_constraintVertical_bias="0.062" />
 
     <EditText
-        android:id="@+id/editText5"
-        android:layout_width="255dp"
-        android:layout_height="40dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:layout_margin="10sp"
-        android:hint="@string/registroPassword"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/registroEmail"
-        android:layout_width="255dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:layout_margin="10sp"
-        android:hint="@string/registroEmail"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5"
-        app:layout_constraintVertical_bias="0.0"
-        android:inputType="textEmailAddress"
-        android:importantForAutofill="no" />
-
-
-
-    <EditText
         android:id="@+id/nombreDeUsuarioRegistro"
         android:layout_width="255dp"
         android:layout_height="40dp"
@@ -101,6 +69,36 @@
         app:layout_constraintTop_toBottomOf="@+id/nombreDeUsuarioRegistro"
         app:layout_constraintVertical_bias="0.0" />
 
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:layout_margin="10sp"
+        android:hint="@string/registroPassword"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/registroEmail"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_margin="10sp"
+        android:hint="@string/registroEmail"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        app:layout_constraintVertical_bias="0.0"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="155dp"
@@ -110,7 +108,7 @@
         android:textColor="#E47979"
         android:fontFamily="sans-serif-thin"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:onClick="funcionRegistrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReproductorMusicaApp</string>
+    <string name="DescripcionPortada">Benvingut!</string>
+    <string name="PortadaBotonIniciarSesion">Iniciar sessió</string>
+    <string name="PortadaBotonRegistrarse">Registrarse</string>
+    <string name="descripcionActivityRegistro">Benvingut! Omple tots els camps per registrarte correctament.</string>
+    <string name="registroNombre">Nom...</string>
+    <string name="registroPassword">Contrasenya</string>
+    <string name="registroEmail">Email...</string>
+    <string name="botonRegistrarseActivityReg">Registrarse</string>
+    <string name="insideAppMensajeBienvenida">Benvingut! Reprodueix la canço que et vingui de gust escoltar.</string>
+    <string name="registroApellido">Cognom...</string>
+    <string name="registroNombreDeCuenta">àlias...</string>
+    <string name="loginUsername">Alias</string>
+    <string name="loginPassword">Contrasenya</string>
+    <string name="botonLoginInInsideApp">Entrar</string>
+    <string name="loginExitoTitulo">Registre completat amb éxit.</string>
+    <string name="botonRegistroConExito">Entrar!</string>
+</resources>

@@ -5,7 +5,6 @@
     <string name="DescripcionPortada">Bienvenido!</string>
     <string name="PortadaBotonIniciarSesion">Iniciar Sesión</string>
     <string name="PortadaBotonRegistrarse">Registrarse</string>
-    <string name="PortadaSwitchToBlack">Black</string>
     <string name="descripcionActivityRegistro">Bienvenido!\nComplete todos los campos para realizar el registro.</string>
     <string name="registroNombre">Nombre...</string>
     <string name="registroPassword">Password...</string>
@@ -13,7 +12,7 @@
     <string name="botonRegistrarseActivityReg">Registrarse</string>
     <string name="insideAppMensajeBienvenida">Bienvenido!\nReproduce la canción que te apetezca escuchar.</string>
     <string name="registroApellido">Apellido...</string>
-    <string name="registroNombreDeCuenta">Username...</string>
+    <string name="registroNombreDeCuenta">alias...</string>
     <string name="activityInsideFoto"></string>
     <string name="fotoInsideApp"></string>
     <string name="textEmailAddress"></string>
@@ -25,6 +24,11 @@
     <string name="fotoHammerToFall">hammerToFall</string>
     <string name="cambiarColor">Color</string>
     <string name="iconoCasa">Color</string>
+    <string name="botonTraduccionIdioma">Idioma</string>
+
+
 
 
 </resources>
+
+
