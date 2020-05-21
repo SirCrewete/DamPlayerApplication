@@ -7,14 +7,38 @@ import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class RegistroActivity extends AppCompatActivity {
+
+    EditText nombre;
+    EditText apellido;
+    EditText nombreUsuario;
+    EditText password;
+    EditText email;
+    Button register;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        nombre = findViewById(R.id.editText4);
+        apellido = findViewById(R.id.nombreDeUsuarioRegistro);
+        nombreUsuario = findViewById(R.id.editText2);
+        password = findViewById(R.id.editText5);
+        email = findViewById(R.id.registroEmail);
+        register = findViewById(R.id.button3);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               registerUser();
+            }
+        });
+
+
 
         ConstraintLayout constraintLayout = findViewById(R.id.layout);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
@@ -27,6 +51,12 @@ public class RegistroActivity extends AppCompatActivity {
         Toast.makeText(this,"Registrandose..", Toast.LENGTH_SHORT).show();
         Intent intentLogin = new Intent(this,  loggin_exito.class);
         startActivity(intentLogin);
+    }
+
+    private void registerUser(){
+        BaseDeDatos bd = new BaseDeDatos( this, "android", null, 1);
+        bd.insertData(nombre.getText().toString(),apellido.getText().toString(),nombreUsuario.getText().toString(),password.getText().toString(),email.getText().toString());
+        bd.getData();
     }
 
 }
