@@ -41,7 +41,7 @@
         android:layout_margin="40sp"
         android:background="@drawable/btn_rounded"
         android:fontFamily="sans-serif-thin"
-        android:onClick="functionLoginIn"
+        android:onClick="functionLogin"
         android:text="@string/PortadaBotonIniciarSesion"
         android:textColor="@color/letras"
         android:textSize="16sp"

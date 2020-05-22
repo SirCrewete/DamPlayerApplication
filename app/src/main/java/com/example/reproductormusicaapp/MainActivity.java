@@ -17,8 +17,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText user, pass, datosUsuario, datosPassword;
+    EditText user, pass;
     Button btnEntrar, btnRegistrar;
+    String datosUsuario, datosPassword;
 
 
     @SuppressLint("WrongViewCast")
@@ -33,30 +34,17 @@ public class MainActivity extends AppCompatActivity {
         animationDrawable.setEnterFadeDuration(2000);
         animationDrawable.setExitFadeDuration(4000);
         animationDrawable.start();
-
     }
 
     public void functionRegister(View v){
        Toast.makeText(this,"TOAST REGISTER", Toast.LENGTH_SHORT).show();
         Intent intentRegister = new Intent(this, RegistroActivity.class);
-        intentRegister.putExtra("1", "1");
-        intentRegister.putExtra("2", "2");
-        intentRegister.putExtra("3", "3");
-        intentRegister.putExtra("4", "4");
-        intentRegister.putExtra("5", "5");
-
         startActivity(intentRegister);
     }
 
-    public void functionLoginIn(View v){
-        Toast.makeText(this,"TOAST LOGIN", Toast.LENGTH_SHORT).show();
-        Intent intentLogin = new Intent(this, login.class);
-        if (datosUsuario.equals("") && datosPassword.equals("")){
-            startActivity(intentLogin);
-        }else{
-            Toast.makeText(this, "Usuario o contraseña incorrecta.", Toast.LENGTH_SHORT).show();
-        }
-
+    public void functionLogin(View v){
+        Intent intentLogin = new Intent (this, login.class);
+        startActivity(intentLogin);
     }
 }
 

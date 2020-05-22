@@ -72,5 +72,4 @@ public class RegistroActivity extends AppCompatActivity {
         bd.insertData(nombre.getText().toString(),apellido.getText().toString(),nombreUsuario.getText().toString(),password.getText().toString(),email.getText().toString());
         bd.getData();
     }
-
 }

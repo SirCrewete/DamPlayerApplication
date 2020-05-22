@@ -46,14 +46,14 @@ public class BaseDeDatos extends SQLiteOpenHelper {
         escritura.close();
     }
 
-    public void getData(){
+    public List<Usuario> getData(){
         SQLiteDatabase lectura = getReadableDatabase();
         String sql = "SELECT * FROM usuarios";
         Cursor cursor = lectura.rawQuery(sql, null);
         cursor.moveToFirst();
         List<Usuario> usuarios = new ArrayList<>();
         do{
-            usuarios.add(new Usuario(
+                    usuarios.add(new Usuario(
                     cursor.getInt(0),
                     cursor.getString(1),
                     cursor.getString(2),
@@ -66,7 +66,9 @@ public class BaseDeDatos extends SQLiteOpenHelper {
             System.out.println(iterator.next().toString());
         }
         lectura.close();
-
+        return usuarios;
     }
+
+
 
 }

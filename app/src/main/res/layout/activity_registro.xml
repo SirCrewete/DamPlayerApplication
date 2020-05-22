@@ -16,6 +16,7 @@
         android:autofillHints=""
         android:fontFamily="sans-serif-thin"
         android:ems="10"
+        android:textStyle="bold"
         android:hint="@string/registroNombre"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/button3"
