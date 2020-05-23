@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void functionRegister(View v){
-       Toast.makeText(this,"TOAST REGISTER", Toast.LENGTH_SHORT).show();
         Intent intentRegister = new Intent(this, RegistroActivity.class);
         startActivity(intentRegister);
     }

@@ -32,7 +32,6 @@ public class login extends AppCompatActivity {
 
 
     public void functionInside(View v){
-        Toast.makeText(this,"INSIDEAPP", Toast.LENGTH_SHORT).show();
         Intent intentInsideApp = new Intent(this, insideApp.class);
         startActivity(intentInsideApp);
     }
