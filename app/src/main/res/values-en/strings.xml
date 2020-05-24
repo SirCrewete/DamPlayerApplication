@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReproductorMusicaApp</string>
+    <string name="DescripcionPortada">Welcome!</string>
+    <string name="PortadaBotonIniciarSesion">Log in</string>
+    <string name="PortadaBotonRegistrarse">Sign in</string>
+    <string name="descripcionActivityRegistro">"Welcome! "</string>
+    <string name="registroNombre">Name...</string>
+    <string name="registroPassword">Password...</string>
+    <string name="registroEmail">Email...</string>
+    <string name="botonRegistrarseActivityReg">Sign in</string>
+    <string name="registroApellido">Surname</string>
+    <string name="registroNombreDeCuenta">Nickname</string>
+    <string name="loginUsername">Nickname</string>
+    <string name="loginPassword">Password</string>
+    <string name="botonLoginInInsideApp">Go!</string>
+    <string name="loginExitoTitulo">Register succefully.</string>
+</resources>

@@ -18,6 +18,7 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
         final EditText datoUsuario = findViewById(R.id.editText);
         final EditText datoPassword = findViewById(R.id.editText6);
 
@@ -42,13 +43,11 @@ public class login extends AppCompatActivity {
         List<Usuario> listaUsuarios = bd.getData();
 
 
-        for (int i = 0; i < listaUsuarios.size(); i++){
-                System.out.println(listaUsuarios.get(i));
-                if (datosUsuario.getText().toString().equals(listaUsuarios.get(i).getNombre()) && datosPassword.getText().toString().equals(listaUsuarios.get(i).getPassword())){
-                    startActivity(intentLogin);
+        for (int i = 0; i < listaUsuarios.size(); i++) {
+                    System.out.println(listaUsuarios.get(i));
+                    if (datosUsuario.getText().toString().equals(listaUsuarios.get(i).getNombre()) && datosPassword.getText().toString().equals(listaUsuarios.get(i).getPassword())) {
+                        startActivity(intentLogin);
                 }
+            }
         }
     }
-
-
-}
